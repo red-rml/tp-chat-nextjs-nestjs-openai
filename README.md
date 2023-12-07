@@ -1,5 +1,7 @@
 # Projet de Chat utilisant NextJS, NestJS et OpenAI API 
 
+REMILI Rédouane
+
 ## Introduction
 
 Dans le cadre de ce projet, nous allons déployer un chat en temps réel, construit avec NextJS et NestJS, et intégrant des fonctionnalités basées sur l'API d'OpenAI. Ce chat fera appel à l'API d'OpenAI pour différentes opérations comme la traduction de messages, la validation des informations et la suggestion de réponses.
