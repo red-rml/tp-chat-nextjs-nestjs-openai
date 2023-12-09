@@ -1,6 +1,24 @@
 # Projet de Chat utilisant NextJS, NestJS et OpenAI API 
 
-REMILI Rédouane
+## Auteurs 🎭
+
+* **Rédouane RÉMILI** _alias_ [@FinOrfy](https://github.com/FinOrfy)
+
+## Consignes et explications 👍
+
+- Application de communication : ouvrir 2 pages web pour converser
+- Choisir en haut à gauche la langue de son choix pour les traductions des messages
+- Une vignette **Vert** sur le message lorsque le message est vérifié par ChatGPT et **Exacte**
+- Une vignette **Rouge** sur le message lorsque le message est vérifié par ChatGPT et **Inexacte**
+- Une vignette **Orange** sur le message lorsque le message est vérifié par ChatGPT et **Sans réponse sûr**
+- Une vignette **Transparent** sur le message lorsque le message est vérifié par ChatGPT et que **c'est neutre**
+- Les suggestions de message sont juste audessus de la barre de texte
+  
+- Le vocal ne marche pas encore 😥
+
+---
+
+# Sujet
 
 ## Introduction
 
@@ -43,3 +61,6 @@ Les étudiants sont libres d'expérimenter en ce qui concerne le design et l'int
 ## Déploiement
 
 Pour ce projet, il n'y a pas de nécessité de déploiement. Le code sera exécuté localement pour des fins de développement et de test.
+
+
+<p align="right">(<a href="#readme-top">retour en haut ⬆</a>)</p>
