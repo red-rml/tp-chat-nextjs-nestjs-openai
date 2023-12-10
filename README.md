@@ -6,14 +6,23 @@
 
 ## Consignes et explications 👍
 
+### installation
+
+- Aller dans le dossier front avec la commmande ```cd front``` puis faire la commande ```npm install``` 
+- Aller dans le dossier server avec la commmande ```cd server``` et pour éviter tout problème de compatibilité, faire la commande ```npm install --legacy-peer-deps```
+- Aller dans le fichier server/src/chat/chat.module.ts et à la place de **'clé API openAI'** Mettre la clé API OpenAI
+
+### Utilisation
+
 - Application de communication : ouvrir 2 pages web pour converser
 - Choisir en haut à gauche la langue de son choix pour les traductions des messages
+
+**L'API OpenAI verifie automatiquement à chaque message la conformité du message**
 - Une vignette **Vert** sur le message lorsque le message est vérifié par ChatGPT et **Exacte**
 - Une vignette **Rouge** sur le message lorsque le message est vérifié par ChatGPT et **Inexacte**
 - Une vignette **Orange** sur le message lorsque le message est vérifié par ChatGPT et **Sans réponse sûr**
 - Une vignette **Transparent** sur le message lorsque le message est vérifié par ChatGPT et que **c'est neutre**
 - Les suggestions de message sont juste audessus de la barre de texte
-  
 - Le vocal ne marche pas encore 😥
 
 ---

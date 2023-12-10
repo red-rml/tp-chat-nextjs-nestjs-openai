@@ -30,9 +30,9 @@ export default function Home() {
 
   return (
     <div className="flex items-center justify-center h-full w-full">
-      <div className="w-4/5 h-4/5 bg-gray-100 rounded-lg shadow-lg p-4 overflow-hidden relative">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-semibold text-gray-800">Chat</h2>
+      <div className="w-3/6 h-3/5 bg-gray-100 rounded-lg shadow-lg p-4 overflow-hidden relative">
+        <div className="flex items-center justify-between mb-4 text-gray-800">
+          <h2 className="text-lg font-semibold">Chat</h2>
           <ReactFlagsSelect
             selected={selectLng}
             customLabels={{
@@ -52,7 +52,7 @@ export default function Home() {
             height: `calc(100% - ${helps.length > 0 ? '165px' : '120px'} )`
           }}>
             {messages.map((currentMessage, currentMessageIndex) => (
-              <div key={currentMessage.id} className={`flex flex-col mb-2 ${currentMessage.owner === socket.id ? 'items-start' : 'items-end'} `}>
+              <div key={currentMessage.id} className={`flex flex-col mb-2 mt-4 ${currentMessage.owner === socket.id ? 'items-end' : 'items-start'} `}>
                 {currentMessage.owner === socket.id ? (
                   <div className="flex">
                     <div className="rounded-lg p-2 pl-4 bg-blue-500 relative">
@@ -67,7 +67,7 @@ export default function Home() {
                       <div style={{ background: currentMessage.reliability, top: '0px', height: '40px', width: '10px', borderRadius: '4px' }} className="absolute left-0"></div>
                       <div onClick={() => {
                         socket.emit('translation', { messages, index: currentMessageIndex, message: currentMessage.message, lng: selectLng })
-                      }} style={{ background: 'black', top: '-10px' }} className="absolute right-0 cursor-pointer">trad</div>
+                      }} style={{ background: 'black', top: '-20px', padding: '2px' }} className="absolute right-0 cursor-pointer rounded-full">trad</div>
                     </div>
                   </div>
                 )}
@@ -78,7 +78,7 @@ export default function Home() {
 
 
         {helps.length > 0 && (
-          <div style={{ width: "500px", height: '65px' }} className="flex items-center ml-4 relative overflow-x-hidden w-full">
+          <div style={{ width: "auto", height: '65px' }} className="flex items-center ml-4 relative overflow-x-hidden w-full">
             <div style={{ width: "5000px" }} className="flex items-center ml-4 overflow-x-auto absolute">
               {helps.split('/').map((help, index) => (
                 <div onClick={(e) => {
