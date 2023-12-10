@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <div className="flex items-center justify-center h-full w-full">
-      <div className="w-3/6 h-3/5 bg-gray-100 rounded-lg shadow-lg p-4 overflow-hidden relative">
+      <div className="w-3/6 h-5/6 bg-gray-100 rounded-lg shadow-lg p-4 overflow-hidden relative">
         <div className="flex items-center justify-between mb-4 text-gray-800">
           <h2 className="text-lg font-semibold">Chat</h2>
           <ReactFlagsSelect
@@ -52,7 +52,7 @@ export default function Home() {
             height: `calc(100% - ${helps.length > 0 ? '165px' : '120px'} )`
           }}>
             {messages.map((currentMessage, currentMessageIndex) => (
-              <div key={currentMessage.id} className={`flex flex-col mb-2 mt-4 ${currentMessage.owner === socket.id ? 'items-end' : 'items-start'} `}>
+              <div key={currentMessage.id} className={`flex flex-col mb-2 mt-6 ${currentMessage.owner === socket.id ? 'items-end' : 'items-start'} `}>
                 {currentMessage.owner === socket.id ? (
                   <div className="flex">
                     <div className="rounded-lg p-2 pl-4 bg-blue-500 relative">
@@ -79,14 +79,14 @@ export default function Home() {
 
         {helps.length > 0 && (
           <div style={{ width: "auto", height: '65px' }} className="flex items-center ml-4 relative overflow-x-hidden w-full">
-            <div style={{ width: "5000px" }} className="flex items-center ml-4 overflow-x-auto absolute">
+            <div style={{ width: "5000px" }} className="flex items-center overflow-x-auto absolute">
               {helps.split('/').map((help, index) => (
                 <div onClick={(e) => {
                   const newMess = { id: messages.length + 1, message: e.target.innerText, owner: socket.id, reliability: 'none' }
                   setMessages([...messages, newMess])
                   socket.emit('messages-update', { messages: [...messages, newMess], message: newMess.message, index: messages.length })
                   setHelps('')
-                }} className="cursor-pointer ml-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 py-2 focus:outline-none" key={help + index}>
+                }} className="cursor-pointer mr-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 py-2 focus:outline-none" key={help + index}>
                   {help}
                 </div>
               ))}
