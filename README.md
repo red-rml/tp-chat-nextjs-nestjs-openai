@@ -18,10 +18,10 @@
 - Choisir en haut à gauche la langue de son choix pour les traductions des messages
 
 **L'API OpenAI verifie automatiquement à chaque message la conformité du message**
-- Une vignette **Vert** sur le message lorsque le message est vérifié par ChatGPT et **Exacte**
-- Une vignette **Rouge** sur le message lorsque le message est vérifié par ChatGPT et **Inexacte**
-- Une vignette **Orange** sur le message lorsque le message est vérifié par ChatGPT et **Sans réponse sûr**
-- Une vignette **Transparent** sur le message lorsque le message est vérifié par ChatGPT et que **c'est neutre**
+- Une vignette **Vert** sur le message lorsqu'il est **Exacte**
+- Une vignette **Rouge** sur le message lorsqu'il est **Inexacte**
+- Une vignette **Orange** sur le message lorsqu'il est **Sans réponse sûr**
+- Une vignette **Transparent** sur le message lorsqu'il est **Neutre**
 - Les suggestions de message sont juste audessus de la barre de texte
 - Le vocal ne marche pas encore 😥
 
