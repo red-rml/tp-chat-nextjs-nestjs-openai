@@ -5,7 +5,7 @@ import { OpenAIModule } from 'nestjs-openai';
 
 @Module({
   imports: [OpenAIModule.register({
-    apiKey: process.env.OPENAI_API_KEY ?? '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',
+    apiKey: process.env.OPENAI_API_KEY ?? 'clé API openAI',
   })],
   providers: [ChatGateway, ChatService],
 })
