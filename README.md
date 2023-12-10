@@ -2,7 +2,7 @@
 
 ## Auteurs 🎭
 
-* **Rédouane RÉMILI** _alias_ [@FinOrfy](https://github.com/FinOrfy)
+* **Rédouane RÉMILI** _alias_ [@FinOrfy](https://github.com/red-rml)
 
 ## Consignes et explications 👍
 
