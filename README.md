@@ -10,7 +10,7 @@
 
 - Aller dans le dossier front avec la commmande ```cd front``` puis faire la commande ```npm install``` 
 - Aller dans le dossier server avec la commmande ```cd server``` et pour éviter tout problème de compatibilité, faire la commande ```npm install --legacy-peer-deps```
-- Aller dans le fichier server/src/chat/chat.module.ts et à la place de **'clé API openAI'** Mettre la clé API OpenAI
+- 🔥 Aller dans le fichier server/src/chat/chat.module.ts et à la place de **'clé API openAI'** Mettre la clé API OpenAI
 
 ### Utilisation
 
